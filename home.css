@@ -39,14 +39,14 @@ header {
     background: rgba(26, 26, 26, 0.8);
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 0 80px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
     animation: float 5s infinite ease-in-out, fadeIn 3s ease-in-out;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .animated-card:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 80px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.3);
 }
 
 .animated-card h2 {
@@ -82,6 +82,47 @@ header {
     font-size: 0.9rem;
     color: #666;
     animation: fadeIn 5s ease-in-out;
+}
+
+/* Route Platform Styles */
+#route-platform {
+    margin-top: 50px;
+    display: none; /* Hidden by default */
+}
+
+#route-platform h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: #1a1a1a;
+    color: #fff;
+}
+
+.input-group button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background: linear-gradient(90deg, #ff4d4d, #f9cb28);
+    color: #000;
+    cursor: pointer;
+}
+
+#route-result {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #ccc;
 }
 
 /* Animations */
