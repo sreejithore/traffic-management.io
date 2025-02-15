@@ -16,9 +16,21 @@
             <div class="animated-card">
                 <h2>Real-Time Traffic Alerts</h2>
                 <p>Get instant updates on traffic conditions, accidents, and road closures.</p>
-                <button class="animated-button">Explore Now</button>
+                <button class="animated-button" id="explore-button">Explore Now</button>
             </div>
         </main>
+
+        <!-- Route Recommendation Platform (Hidden Initially) -->
+        <div id="route-platform" class="hidden">
+            <h2>Find the Best Route</h2>
+            <div class="input-group">
+                <input type="text" id="start-location" placeholder="Enter starting location">
+                <input type="text" id="end-location" placeholder="Enter destination">
+                <button id="find-route-button">Find Best Route</button>
+            </div>
+            <div id="route-result"></div>
+        </div>
+
         <footer class="animated-footer">
             <p>&copy; 2023 Traffic Alert System. All rights reserved.</p>
         </footer>
